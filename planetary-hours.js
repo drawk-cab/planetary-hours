@@ -1,33 +1,3 @@
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Planetary hours</title>
-        <style type="text/css">
-
-html,body   {   height: 100%;
-                text-align: center; }
-
-svg         {   height: 80%;
-                margin: 40px auto; }
-
-body, input, button
-            {   background-color: black;
-                color: white;
-                font-family: serif; }
-
-button      {   background-color: #844; 
-                padding: 4px;
-                border: 1px outset #400; }
-
-input       {   border: none;
-                background-color: #444;
-                padding: 4px; }
-
-        </style>
-        <script src="suncalc/suncalc.js"></script>
-        <script type="application/javascript">
 
 /* http://stackoverflow.com/questions/5736398/how-to-calculate-the-svg-path-for-an-arc-of-a-circle */
 
@@ -218,26 +188,3 @@ var init = function() {
         go();
     }
 };
-
-        </script>
-    </head>
-    <body onload="init()">
-        <div>
-            <button id="prev_week" onclick="go_days(-7)">&#x25c4;&#x25c4;</button>
-            <button id="prev_day" onclick="go_days(-1)">&#x25c4;</button>
-            <input type="text" id="when" value="" onchange="go()">
-            <button id="next_day" onclick="go_days(1)">&#x25ba;</button>
-            <button id="next_week" onclick="go_days(7)">&#x25ba;&#x25ba;</button> at
-            <input type="text" id="lat" value="51.5199" onchange="go()"> (N),
-            <input type="text" id="lon" value="-0.1312" onchange="go()"> (E)
-            <button id="set_place" onclick="go()">&#x2316;</button>
-        </div>
-        <svg viewBox="0 0 2 2">
-            <text x="1" y="0.8" id="text-planet" fill="white" font-size="0.2" text-anchor="middle"> </text>
-            <text x="1" y="1.2" id="text-time" fill="white" font-size="0.1" text-anchor="middle">Roll over a segment</text>
-            <g id="hours">
-            </g>
-        </svg>
-    </body>
-</body>
-

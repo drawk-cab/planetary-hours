@@ -36,5 +36,5 @@ Friday with Venus (French 'vendredi'),
 and Saturday with Saturn.
 
 Although most related languages have replaced some of the days in this scheme,
-[Welsh->http://www.omniglot.com/language/time/days.htm] retains the complete set.
+[Welsh](http://www.omniglot.com/language/time/days.htm) retains the complete set.
 
